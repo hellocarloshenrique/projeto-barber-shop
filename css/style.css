@@ -68,11 +68,13 @@ body {
 ********************/
 
 .home .banner {
+    /* A posição absoluta sempre se refere a posição relativa pai, caso contrario obedece ao pai body */
     position: absolute;
     top: 50%;
     left: 50%;
     height: 270px;
     width: 770px;
+    /* o maring top e left negativo serva para eu colocar a div exatamente no meio da pagina/section */
     margin-top: -75px;
     margin-left: -385px;
     color: white;
