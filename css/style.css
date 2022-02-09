@@ -12,6 +12,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
 /************* 
     HOME
 *************/
@@ -97,4 +102,108 @@ body {
 
 .home .banner .slogan2 {
     margin-bottom: 15px;
+}
+
+/*********** 
+    ABOUT
+************/
+
+.about {
+    background-color: var(--color-primary);
+}
+
+.about .container {
+    display: flex;
+}
+
+.about .container .timing {
+    position: relative;
+    top: -50px;
+    width: 33%;
+    padding: 20px;
+    background-image: url(../images/brush-big.jpg);
+}
+
+.about .container .timing .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .container .timing .overlay .icon-cut {
+    width: 50px;
+}
+
+.about .container .timing .overlay h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    /* fit-content: deixa o elemento na mesma largura do h3 */ 
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+}
+
+.about .container .experience {
+    width: 66%;
+}
+
+.about .container .timing .overlay .text {
+    margin: 10px 0;
+}
+
+.about .container .timing .overlay .text:after {
+    content: '•';
+    display: block;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about .container .timing .overlay .text:last-of-type:after {
+    content: '|';
+}
+
+.about .container .timing .overlay h4 {
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.about .container .timing span {
+    color: white;
+    font-size: 15px;
+    display: block;
+}
+
+.about .experience {
+    width: 66%;
+    color: white;
+    margin-left: 7%;
+    margin-top: 100px;
+}
+
+.about .experience h2 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.about .experience h2:after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text p {
+    margin-bottom: 20px;
+    /* font-weight: 100; */
+    font-size: 17px;
 }
