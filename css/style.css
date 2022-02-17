@@ -327,3 +327,47 @@ body {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+
+/************ 
+    GALLERY
+*************/
+
+.gallery {
+    padding: 100px 0;
+    background-color: var(--color-primary-ligth);
+}
+
+.gallery h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* aqui eu consigo fazer todas as imagens se organizarem dentro do viewport inteiro
+se ficar crescendo a pag. quando vou adicionando mais imagens ao longo do projeto. */
+.gallery .gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;
+    margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div {
+    border: 10px solid var(--color-primary);
+    margin: 5px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img {
+    width: 100%;
+}
